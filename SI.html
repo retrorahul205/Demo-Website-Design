@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annexure 1</title>
+    <link rel="stylesheet" href="SI.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <video autoplay loop muted plays-inline class="background-clip" id="background-video">
+            <source src="Images and Videos/aurora-forest-moewalls-com.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="time-container">
+                <h1 id="current-time"></h1>
+            </div>
+            <h1>Book Library</h1>
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.58/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/4mJePcJo0z7XKQao/scene.splinecode"></spline-viewer>
+
+            <a href="#" class="login-btn" onclick="openLoginPopup()">Register Now</a>
+            <div id="loginPopup" class="popup-container">
+                <div class="popup">
+                    <span class="close" onclick="closeLoginPopup()">&times;</span>
+                    <h2>Login</h2>
+                    <form>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="more-content">
+        <div class="searchbox">
+            <label for="searchbox"> Search for your own</label><br>
+            <input type="text" placeholder="Search Here" />
+        </div>
+        <div class="content-section">
+            <h2>Choose Your Mood</h2>
+            <nav class="second-nav">
+                <ul>
+                    <li class="educate">
+                        <video autoplay loop muted playsinline class="background-video">
+                            <source src="Images and Videos/white-moonflower-field-katana-moewalls-com.mp4" type="video/mp4">
+                        </video>
+                        <span>Education</span>
+                    </li>
+                    <li class="manhwa">
+                        <video autoplay loop muted playsinline class="background-video">
+                            <source src="Images and Videos/eren-manga-attack-on-titan-moewalls-com.mp4" type="video/mp4">
+                        </video>
+                        <span>Manhwa</span>
+                    </li>
+                    <li class="story">
+                        <video autoplay loop muted playsinline class="background-video">
+                            <source src="Images and Videos/howl-and-sophie-in-the-flower-field-howls-moving-castle-moewalls-com.mp4"
+                                type="video/mp4">
+                        </video>
+                        <span>Story Time</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-section">
+            <h2>Today's Recommendations</h2>
+        </div>
+        <div class="grid">
+            <div class="griditem">
+                <div class="about">
+                    <p><strong>The Night We Met</strong></p>
+                    <p>by Lord Huron</p><br>
+                    <button type="submit">Rent</button>
+                    <p>Book Description
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odit non ratione animi
+                        accusamus vitae commodi quibusdam illo nemo corrupti doloribus nesciunt itaque exercitationem
+                        quia fuga fugiat assumenda, porro voluptas.
+                    </p>
+                </div>
+                <div class="image"></div>
+            </div>
+
+            <div class="griditem">
+                <div class="about">
+                    <p><strong>To The Bone</strong></p>
+                    <p>by Pamungkas</p><br>
+                    <button type="submit">Rent</button>
+                    <p>Book Description
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odit non ratione animi
+                        accusamus vitae commodi quibusdam illo nemo corrupti doloribus nesciunt itaque exercitationem
+                        quia fuga fugiat assumenda, porro voluptas.
+                    </p>
+                </div>
+                <div class="image1"></div>
+            </div>
+
+            <div class="griditem">
+                <div class="about">
+                    <p><strong>Line Without A Hook</strong></p>
+                    <p>by Ricky Montgomery</p><br>
+                    <button type="submit">Rent</button>
+                    <p>Book Description
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odit non ratione animi
+                        accusamus vitae commodi quibusdam illo nemo corrupti doloribus nesciunt itaque exercitationem
+                        quia fuga fugiat assumenda, porro voluptas.
+                    </p>
+                </div>
+                <div class="image2"></div>
+            </div>
+
+            <div class="griditem">
+                <div class="about">
+                    <p><strong>Mary On A Cross</strong></p>
+                    <p>by Ghost</p><br>
+                    <button type="submit">Rent</button>
+                    <p>Book Description
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odit non ratione animi
+                        accusamus vitae commodi quibusdam illo nemo corrupti doloribus nesciunt itaque exercitationem
+                        quia fuga fugiat assumenda, porro voluptas.
+                    </p>
+                </div>
+                <div class="image3"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="containerend">
+            <p>&copy; 2024 Books Library. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="SI.js"></script>
+</body>
+</html>

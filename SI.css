@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 95px;
+    color: bisque;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+spline-viewer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.content h1 {
+    position: relative;
+    z-index: 0;
+}
+
+.content a {
+    font-size: 23px;
+    color: blanchedalmond;
+    text-decoration: none;
+    border: 2px solid burlywood;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.content a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.time-container {
+    text-align: center;
+}
+
+#current-time {
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid white;
+    padding: 15px 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: bisque;
+}
+
+.more-content {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.griditem {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.griditem:hover {
+    transform: scale(1.05);
+    background-color: wheat;
+    border: 2px solid whitesmoke;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/3/34/The_Night_We_Met.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 2px solid blanchedalmond;
+}
+
+.image1 {
+    height: 200px;
+    width: 200px;
+    background-image: url("https://i.scdn.co/image/ab67616d0000b2738540f1aa50ce035b4e9cdfa7");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 2px solid blanchedalmond;
+}
+
+.image2 {
+    height: 200px;
+    width: 200px;
+    background-image: url("https://i.scdn.co/image/ab67616d0000b27367ee332af483acd134fd6fd0");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 2px solid blanchedalmond;
+}
+
+.image3 {
+    height: 200px;
+    width: 200px;
+    background-image: url("https://i.scdn.co/image/ab67616d0000b273bef9b0a348ea8dd18a581025");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 2px solid blanchedalmond;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.second-nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid white;
+    padding: 15px 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.second-nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0 20px;
+    justify-content: center;
+}
+
+.second-nav ul li {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.5);
+    flex: 1;
+    color: antiquewhite;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.educate {
+    background-image: url('Images\ and\ Videos/Snip1.png');
+}
+
+.manhwa {
+    background-image: url('Images\ and\ Videos/Snip2.png');
+}
+
+.story {
+    background-image: url('Images\ and\ Videos/Snip3.png');
+}
+
+.second-nav ul li video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.second-nav ul li:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.containerend {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.searchbox label {
+    font-size: 23px;
+    font-style: bold;
+    font-weight: 500;
+}
+
+.searchbox input {
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid wheat;
+    border-radius: 200px;
+    margin: 20px;
+}
+
+.searchbox input:hover {
+    background-color: blanchedalmond;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.2);
+    border: 2px solid blanchedalmond;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #005f73;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f73;
+}
+
+.more-content {
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+}
+
+spline-viewer {
+    z-index: -1;
+}
